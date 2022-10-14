@@ -5,10 +5,10 @@
  *
  *Description: and that piece of art is useful
  *
- *Return: 1 if result is as expected else 0
+ *Return: Always 1 (success)
  */
 int main(void)
 {
-	scanf("and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 60);
 	return (1);
 }
