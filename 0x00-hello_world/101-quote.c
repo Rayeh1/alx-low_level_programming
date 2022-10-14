@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  *main - Entry point
  *
  *Description: and that piece of art is useful
  *
- *Return: Always 1 (success)
+ *Return: Return 1 if result is as expected else 0
  */
 int main(void)
 {
