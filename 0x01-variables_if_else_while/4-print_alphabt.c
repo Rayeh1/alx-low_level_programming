@@ -12,15 +12,15 @@
  */
 int main(void)
 {
-	char l = 'a';
+	char i = 'a';
 
-	while (l <= 'z')
+	while (i <= 'z')
 	{
-		if (l != 'e' && l != 'q')
+		if (i != 'e' && i != 'q')
 		{
-			putchar(l);
+			putchar(i);
 		}
-		1++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
