@@ -5,13 +5,14 @@
  *
  * Return: Always 0 (success)
  */
-int main (void)
+
+int main(void)
 {
-	char c;
-	for(c = 'a'; c <= 'z'; c++)
+	char i;
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(c);
+		_putchar(i);
 	}
-	putchar('\n')
+	_putchar('\n');
 	return (0);
 }
