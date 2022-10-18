@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * main - entry point
@@ -7,11 +7,14 @@
  */
 int main(void)
 {
-	char c;
-	for(c='putchar')
-	{	
-	putchar(c);
-	}
+	putchar(_)
+	putchar(p)
+	putchar(u)
+	putchar(t)
+	putchar(c)
+	putchar(h)
+	putchar(a)
+	putchar(r)
 	putchar('\n')
 	return (0);
 }
