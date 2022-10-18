@@ -3,7 +3,9 @@
 /**
  * main - entry point
  *
- * return: 0 (success)
+ *_putchar: print putchar
+ *
+ * return: Always 0 (success)
  */
 int main(void)
 {
