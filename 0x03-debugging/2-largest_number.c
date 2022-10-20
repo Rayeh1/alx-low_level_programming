@@ -24,6 +24,6 @@ int largest_number(int a, int b, int c)
 	{
 		largest = c;
 	}
-	putchar((largest)+'0')
+	printf("largest of 3 numbers:%d", largest)
 	return (largest);
 }
