@@ -8,14 +8,11 @@
  */
 int _isupper(int c)
 {
-	int x;
-
-	for (x = 'A'; x <= 'Z'; x++)
-		if (x == c)
+	if (c >= 'A' && c <= 'Z')
 		{
 			return (1);
 		}
-		else
+	else
 		{
 			return (0);
 		}
