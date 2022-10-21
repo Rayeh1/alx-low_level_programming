@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- *print_most_numbers - prints numbbers from 0 to 9
- *_putchar - to print
- *@c: operand to print
+ *print_most_numbers - prints numbers from 0 to 9
  *Return: Always 0 (always)
  */
 void print_most_numbers(void)
