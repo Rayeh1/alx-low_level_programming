@@ -3,7 +3,6 @@
 /**
  * print_line - print straight lines
  * @n: nuvariable
- * @num: initial start
  * Return: line putout
  */
 void print_line(int n)
