@@ -2,11 +2,13 @@
 
 /**
  *print_most_numbers - prints numbers from 0 to 9
+ *exclude 2 and 4
+ *use _putchar
  *Return: Always 0 (always)
  */
 void print_most_numbers(void)
 {
-	int c;
+	char c;
 
 	for (c = '0'; c >= '9'; c++)
 	{
