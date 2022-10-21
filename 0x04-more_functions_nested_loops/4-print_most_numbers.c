@@ -1,5 +1,5 @@
 #include "main.h"
-i
+
 /**
  *print_most_numbers - prints numbbers from 0 to 9
  *_putchar - to print
