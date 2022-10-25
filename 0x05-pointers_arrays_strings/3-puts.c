@@ -3,7 +3,6 @@
 /**
  * _puts - function
  *@str: string
- *@c: index
  * return: always 0 (success)
  */
 void _puts(char *str)
