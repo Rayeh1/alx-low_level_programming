@@ -1,4 +1,5 @@
 #include "main.h"
+#include<unistd.h>
 
 /**
  * _puts - function
@@ -8,8 +9,6 @@
 void _puts(char *str)
 {
 	char c;
-
 	c = *str;
-	_putchar((c) + '0');
-	_putchar('\n');
+	write(1, &c, 8);
 }
