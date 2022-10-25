@@ -3,7 +3,7 @@
 
 /**
  * puts2 - function
- * str - operand
+ * str: operand
  * Return: void
  */
 void puts2(char *str)
