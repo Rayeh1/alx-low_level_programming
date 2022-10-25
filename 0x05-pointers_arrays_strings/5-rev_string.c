@@ -8,13 +8,19 @@
  */
 void rev_string(char *s)
 {
-	int x;
-	int end;
+	int i = 0, len, rev;
+	char let;
 
-	end = strlen(s) - 1;
-	for (x = end; x >= 0;)
-		{
-		 *s = s[x];
-			x--;
-		}
+	while (s[i] != '\0')
+	{
+	i++;
+	}
+	rev = i - 1;
+
+	for (len = 0; rev >= 0 && len < rev; rev--, len++)
+	{
+	let = s[len];
+	s[len] = s[rev];
+	s[rev] = let;
+	}
 }
