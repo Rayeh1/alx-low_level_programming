@@ -5,20 +5,21 @@
 /**
  * print_array - function
  * @n: operand
+ * @a: 2nd operand
  * return: void
  */
 void print_array(int *a, int n)
 {
 	int x;
-	x = 0;
-	if (x < n - 1)
+	for (x = 0; x < n; x++)
 	{
-	printf("%d, ", a[x]);
-	x++;
-	}
-	else
-	{
-	printf("%d", a[x]);
+		if (x != n - 1)
+		{
+		printf("%d, ", a[x]);
+		}
+		else
+		{
+		printf("%d", a[x]);
+		}
 	}
 }
-
