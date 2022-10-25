@@ -8,11 +8,11 @@
  */
 int _strlen(char *s)
 {
-	char c;
+	int len;
 
-	c = _strlen(s);
+	len = _strlen(s);
 	{
-	_putchar(c);
+	_putchar((len) + '0');
 	}
 	return (0);
 }
