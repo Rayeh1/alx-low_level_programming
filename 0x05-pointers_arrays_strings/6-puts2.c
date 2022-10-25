@@ -3,14 +3,14 @@
 
 /**
  * puts2 - function
- * @str - operand
+ * str - operand
  * Return: void
  */
 void puts2(char *str)
 {
 	int c;
 	int end;
-	
+
 	end = strlen(str) - 1;
 	for (c = 0; c <= end; c++)
 	{
