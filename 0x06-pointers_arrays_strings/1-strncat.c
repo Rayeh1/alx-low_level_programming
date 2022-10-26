@@ -3,13 +3,13 @@
 
 /**
  * _strncat - function
- * @n; integer
+ * @n: integer
  * @dest: string 2
  * @src: string 1
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	_strncat(dest, src, n);
+	strncat(dest, src, n);
 	return (dest);
 }
