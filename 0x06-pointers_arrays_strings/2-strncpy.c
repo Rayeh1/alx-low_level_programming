@@ -2,6 +2,7 @@
 #include <string.h>
 
 /**
+ * _strncpy - function
  * @n: integer
  * @dest: integer 1
  * @src:integer 2
