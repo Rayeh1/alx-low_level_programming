@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strcmp - function
@@ -8,21 +9,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int a;
-	int b;
+	int ret;
 
-	s1[a];
-	s2[b];
-	if (a > b)
-	{
-		return (a - b);
-	}
-	else if (b > a)
-	{
-		return (b - a);
-	}
-	else
-	{
-		return('0');
-	}
+	ret = strcmp(s1, s2);
+	return (ret);
 }
