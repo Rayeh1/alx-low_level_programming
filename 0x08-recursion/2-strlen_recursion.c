@@ -1,8 +1,6 @@
 #include "main.h"
 #include <string.h>
 
-int x;
-
 /**
  * _strlen_recursion - function
  * @s: string
@@ -10,6 +8,7 @@ int x;
  */
 int _strlen_recursion(char *s)
 {
+	int x;
 	x = strlen(s);
 	return (x);
 }
