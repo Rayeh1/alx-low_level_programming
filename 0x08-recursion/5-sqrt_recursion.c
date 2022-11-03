@@ -7,7 +7,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	int ruu;
+	int ruu = 0;
 
 	if (n < 0)
 		return (-1);
@@ -23,13 +23,13 @@ int _sqrt_recursion(int n)
  * @ruu: root test
  * Return: sqr root
  */
-int sqr_root(int base, int rut)
+int sqr_root(int base, int ruu)
 {
-	if ((rut * rut) == base)
-		return (rut);
+	if ((ruu * ruu) == base)
+		return (ruu);
 
-	if (rut == base / 2)
+	if (ruu == base / 2)
 		return (-1);
 
-return (sqr_root(base, rut + 1));
+return (sqr_root(base, ruu + 1));
 }
