@@ -5,7 +5,7 @@
  * main - function
  * @argc: numb
  * @argv: args
- * Return: 1
+ * Return: 1 or 0
  */
 int main(int argc, char *argv[])
 {
@@ -13,18 +13,17 @@ int main(int argc, char *argv[])
 	int y;
 	int result;
 
-	x = atoi(argv[1]);
-	y = atoi(argv[2]);
-	result = x * y;
-
-	if (argc != 3)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	result = x * y;
 		printf("%d\n", result);
-	return (0);
 	}
+	return (0);
 }
