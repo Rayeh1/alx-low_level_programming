@@ -3,7 +3,9 @@
 #include "main.h"
 
 /**
- * Program that prints name - function
+ * main - print arg
+ * @argc: arg count
+ * @argv: args
  * Return: void
  */
 int main(int argc, char *argv[])
