@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	y = atoi(argv[2]);
 	result = x * y;
 
-	if (argc < 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
