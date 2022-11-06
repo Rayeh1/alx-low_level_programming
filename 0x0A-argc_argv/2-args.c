@@ -3,6 +3,7 @@
 
 /**
  *main - function
+ *@i: array
  *@argc: number
  *@argv: args
  *Return: void
