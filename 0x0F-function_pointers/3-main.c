@@ -8,25 +8,35 @@
  * @argv: array of args
  * Return: return something
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	if (argc == 4)
-	{
-	int a;
-	int b;
-	int (*func)(int, int);
+	int num1, num2;
+	char *operator;
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	func = get_op_func(argv[2]);
-	if ((*argv[2] == '%' || *argv[2] == '/') && b == 0)
+	if (argc != 4)
 	{
-	printf("Error\n");
-	exit(100);
-	}
-	printf("%d\n", func(a, b));
-	return (0);
-	}
 	printf("Error\n");
 	exit(98);
+	}
+
+	num1 = atoi(argv[1]);
+	operator = argv[2];
+	num2 = atoi(argv[3]);
+
+	if (get_op_func(operator) == NULL || operator[1] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	if ((*operator == '/' && num2 == 0) ||
+	(*operator == '%' && num2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", get_op_func(operator)(num1, num2));
+
+	return (0);
 }
