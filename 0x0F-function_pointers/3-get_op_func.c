@@ -4,10 +4,8 @@
 
 /**
  * get_op_func - function pointer that selects the correct function to perform
- * the operation asked by the user
  * @s: the operator given by the user
  * Return: pointer to the function that corresponds to the
- * operator given as a parameter
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -19,17 +17,10 @@ int (*get_op_func(char *s))(int, int)
 	{"%", op_mod},
 	{NULL, NULL}
 	};
-	int i;
+	int fint = 0;
 
-	i = 0;
+	while (ops[fint].op != NULL && *(ops[fint].op) != *s)
+		fint++;
 
-	while (ops[i].f != NULL)
-	{
-	if (*s == *(ops[i].op) && s[1] == '\0')
-			return (ops[i].f);
-		i++;
-	}
-
-	printf("Error\n");
-	exit(99);
+	return (ops[fint].f);
 }
