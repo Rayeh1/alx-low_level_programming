@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "function_pointers.h"
+
 /**
  * array_iterator - calls a function to act on array elements
  * @array: Name of the array in which the function acts on.
