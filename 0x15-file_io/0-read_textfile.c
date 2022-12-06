@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	chk = read(fild, buffer, letters);
 	chk = write(STDOUT_FILENO, buffer, chk);
-		if (chk < 0)
+	if (chk < 0)
 	return (0);
 
 	close(fild);
